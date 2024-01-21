@@ -1,0 +1,22 @@
+show databases;
+use db;
+show tables;
+
+-----------------------------------
+
+
+CREATE TABLE employee (emp_id VARCHAR(20), first_name VARCHAR(20),
+       last_name VARCHAR(20),primary_skills VARCHAR(20), location VARCHAR(20));
+
+-------------------------
+
+
+describe employee;
+
+
+----------insert------------
+
+insert into employee values(1,"Saurav","singh","AWS","BNG");
+
+
+https://github.com/sauravinside/aws-code-main

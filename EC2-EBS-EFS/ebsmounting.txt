@@ -1,0 +1,22 @@
+file -s /dev/xvdf
+   57  sudo file -s /dev/xvdf
+   58  sudo mkfs -s /dev/xvdf
+   59  sudo file -s /dev/xvdf
+   60  sudo file -s ext4  /dev/xvdf
+   61  sudo file -t ext4  /dev/xvdf
+   62  sudo mkfs -t ext4 /dev/xvdf
+   63  sudo file -s /dev/xvdf
+   64  clear
+   65  ls
+   66  sudo mkdir ebsvolume
+   67  ls
+   68  sudo mount /dev/xvdf ebsvolume
+   69  ls
+   70  cd ebsvolume
+   71  sudo touch 1.txt
+   72  ls
+   73  cd
+   74  sudo umount ebsvolume
+   75  cd ebsvolume
+   76  ls
+   77  history

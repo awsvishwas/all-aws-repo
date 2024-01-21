@@ -1,0 +1,32 @@
+1. To create a bucket
+
+aws s3 mb s3://bucket-name
+
+
+2. To delete a bucket
+
+aws s3 rb s3://bucket-name
+
+3. list buckets
+
+aws s3 ls
+
+4. list items in bucket
+
+aws s3 ls s3://bucket-name
+
+5. Copy Items from local system to S3 bucket 
+
+aws s3 cp 'local-path' s3://my-bucket/
+
+6.  Copy Items from one bucket to another
+
+aws s3 cp s3://bucket-name/example s3://my-bucket/
+
+7. Sync local files to s3:
+
+aws s3 sync 'path-to-local-directory' s3://bucket-name/directory-to-which-sync-will-take-place
+
+8. Remove objects from s3 bucket
+
+aws s3 rm s3://bucket-name/example/filename.txt

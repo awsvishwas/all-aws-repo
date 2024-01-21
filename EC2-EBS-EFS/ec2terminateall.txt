@@ -1,0 +1,1 @@
+aws ec2 terminate-instances --instance-ids instance-id1 instance-id2 --profile profile_name

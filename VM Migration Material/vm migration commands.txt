@@ -1,0 +1,6 @@
+aws ec2 import-image --disk-containers "file://C:\Users\Admin\Downloads\container.json" --role vishwas-VMMigrationRole
+
+aws ec2 describe-import-image-tasks --import-task-ids "import-ami-053b331c7024de154" --region us-east-1
+
+
+import-ami-053b331c7024de154

@@ -1,0 +1,1 @@
+aws sns publish --region us-east-1 --topic-arn ## --message "Hi, hope you are well. Here are your reports."

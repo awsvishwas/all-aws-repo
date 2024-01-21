@@ -1,0 +1,15 @@
+[
+    {
+        "AllowedHeaders": [
+            "*"
+        ],
+        "AllowedMethods": [
+            "GET"
+        ],
+        "AllowedOrigins": [
+            "http://source-bucket-cors-5-12-2023.s3-website-us-east-1.amazonaws.com"
+        ],
+        "ExposeHeaders": [],
+        "MaxAgeSeconds": 3000
+    }
+]

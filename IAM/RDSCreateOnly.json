@@ -1,0 +1,33 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "rds:CreateDBSubnetGroup",
+                "rds:Describe*",
+                "rds:ListTagsForResource",
+                "ec2:DescribeAccountAttributes",
+                "rds:CreateDBInstance",
+                "rds:DescribeDBInstances",
+                "ec2:DescribeAvailabilityZones",
+                "ec2:DescribeInternetGateways",
+                "ec2:DescribeSecurityGroups",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeVpcAttribute",
+                "ec2:DescribeVpcs"
+            ],
+            "Resource": "*"
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "iam:CreateServiceLinkedRole"
+            ],
+            "Resource": [
+                "arn:aws:iam::*:role/aws-service-role/*"
+            ]
+        }
+        
+    ]
+}

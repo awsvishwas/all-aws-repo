@@ -1,0 +1,16 @@
+sudo add-apt-repository -y ppa:ondrej/php
+sudo apt install php5.6 mysql-client php5.6-mysqli
+
+
+sudo cp /home/ubuntu/1243/index.php /var/www/html
+sudo cp -r /home/ubuntu/1243/images /var/www/html
+cd /var/www/html
+sudo rm index.html
+
+mysql -h ##endpoint## -u ##master-username-eg:admin## -p
+create database intel;
+show databases;
+use intel;
+create table data(firstname varchar(20),email varchar(20));
+
+select * from data;

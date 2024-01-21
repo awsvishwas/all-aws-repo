@@ -1,0 +1,14 @@
+sudo yum -y install git
+sudo yum -y install rpm-build
+git clone https://github.com/aws/efs-utils
+cd efs-utils
+sudo yum -y install make
+sudo yum -y install rpm-build
+sudo make rpm
+sudo yum -y install ./build/amazon-efs-utils*rpm
+
+
+
+for ubuntu:
+
+sudo apt-get install nfs-common

@@ -1,0 +1,26 @@
+AWS Project 1 - Deploying Multi-Tier Website Using AWS EC2.
+
+Deploying a PHP website that recieves data from the user and stores that data in 
+RDS MySQL Database. 
+Entire architecture is scalable due to Autoscaling of servers and is highly available.
+Data Stored in RDS is highly secured, encrypted and mangaes failover. It can only be accessed by 
+authorized database admin.
+
+
+AWS Capstone Project (Project 2)
+
+Deploying an Python based web application ie Employee database and media storage application using most prominently used AWS
+Services in industry such as EC2, ELB, VPC, S3, IAM, RDS, DynamoDB and Route53 etc.
+
+Applcation Server is hosted privately and can only be accessed by the Company's Employees.
+It can be accessed using domain name using Route53 and Freenom.
+
+Employee information is to be stored in RDS, 
+media files are stored in S3 and object metadata is to be stored in DynamoDB.
+Implementing services with both SQL and NoSQL based databases.
+
+The personal data is encrypted at rest using AWS KMS keys and can't be compromised.
+Users get and email from SNS whenver the user data is being created or edited.
+
+The project integrates all these services together to host the application with most secure, redundant
+and cost-effective solution.

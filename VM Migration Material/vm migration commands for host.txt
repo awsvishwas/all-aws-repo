@@ -1,0 +1,11 @@
+  To add user to sudoers file.
+  usermod -aG sudo username //note: provide your username in place of username.
+
+  303  sudo apt install openssh-client
+  304  sudo ufw allow ssh
+  305  sudo gufw allow ssh
+  306  sudo apt install ufw -y
+  307  sudo systemctl start ufw
+  308  sudo systemctl enable ufw
+  309  sudo ufw allow ssh
+  310  sudo ufw allow 22

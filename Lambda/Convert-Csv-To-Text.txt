@@ -1,0 +1,28 @@
+import boto3
+import csv
+
+s3_client = boto3.client('s3')
+
+def lambda_handler(event, context):
+    # Get the bucket and key of the uploaded object
+    bucket = event['Records'][0]['s3']['bucket']['name']
+    key = event['Records'][0]['s3']['object']['key']
+
+    # Download the CSV file from S3
+    response = s3_client.get_object(Bucket=bucket, Key=key)
+    csv_data = response['Body'].read().decode('utf-8')
+
+    # Convert CSV to TXT
+    txt_data = ""
+    csv_reader = csv.reader(csv_data.splitlines())
+    for row in csv_reader:
+        txt_data += "\t".join(row) + "\n"
+
+    # Upload the TXT file back to S3 with a new key or format
+    new_key = key.replace('.csv', '.txt')
+    s3_client.put_object(Bucket=bucket, Key=new_key, Body=txt_data.encode('utf-8'))
+
+    return {
+        'statusCode': 200,
+        'body': 'File format conversion successful!'
+    }

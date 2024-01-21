@@ -1,0 +1,32 @@
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "ec2:AttachVolume",
+                "ec2:AuthorizeSecurityGroupEgress",
+                "ec2:AuthorizeSecurityGroupIngress",
+                "ec2:DescribeInstances",
+                "ec2:DescribeTags",
+                "ec2:CreateTags",
+                "ec2:RunInstances",
+                "ec2:DescribeSecurityGroups",
+                "ec2:CreateVolume",
+                "ec2:CreateNetworkInterface",
+                "ec2:DescribeImages",
+                "ec2:DescribeSecurityGroupRules",
+                "ec2:DescribeNetworkInterfaces",
+                "ec2:DescribeVpcs",
+                "ec2:CreateSecurityGroup",
+                "ec2:DescribeVolumes",
+                "ec2:DescribeInstanceTypes",
+                "ec2:AttachNetworkInterface",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeKeyPairs"
+            ],
+            "Resource": "*"
+        }
+    ]
+}

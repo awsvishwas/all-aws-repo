@@ -1,0 +1,11 @@
+[
+{
+"Description":"kali",
+"Format":"vmdk",
+"UserBucket":
+{
+"S3Bucket":"vishwasvmmigration",
+"S3Key":"kali-linux-2022-disk001.vmdk"
+}
+}
+]

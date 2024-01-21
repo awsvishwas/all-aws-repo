@@ -1,0 +1,54 @@
+Nginx Installation:
+
+Amzn linux/RedHat commands:
+
+sudo yum update -y
+sudo amazon-linux-extras install nginx1 -y
+sudo systemctl start nginx
+sudo systemctl status nginx
+
+Ubuntu commands:
+
+sudo apt update -y
+sudo apt install nginx -y
+
+------------------------------------------------------------------
+
+Apache Installation:
+
+Ubuntu:
+
+sudo apt update
+sudo apt install apache2
+
+RedHat/Amazon Linux:
+
+sudo yum update
+sudo yum install httpd
+sudo systemctl start httpd
+
+
+cd /var/www/html
+ls
+sudo rm index.html
+sudo nano index.html
+
+------------------------------------------------------------------
+
+EBS Mounting commands:
+
+mkdir "name"
+sudo mkfs -t ext4 "/dev/device_name"
+sudo mount "/dev/device_name" "path_to_mount"
+
+------------------------------------------------------------------
+
+EFS Required commands:
+
+Ubuntu:
+
+sudo apt install nfs-common -y
+
+Redhat:
+
+sudo yum install nfs-utils -y

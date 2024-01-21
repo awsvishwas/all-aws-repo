@@ -1,0 +1,84 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  position: relative; /* Add this line */
+}
+
+.counter-container {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.counter-label {
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.boxes-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.box {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+  background-color: #f8f8f8;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 0 4px;
+  transition: width 0.3s, height 0.3s;
+}
+
+.visits-box {
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  background-color: #f8f8f8;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.visits-label {
+  font-size: 16px;
+  margin-right: 8px;
+}
+
+.visits-count {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+}
+
+#reset {
+  font-size: 16px;
+  padding: 8px 16px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+#reset:hover {
+  background-color: #555;
+}
+
+.increase-animation {
+  width: fit-content;
+  height: fit-content;
+}
